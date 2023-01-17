@@ -1,0 +1,24 @@
+<section>
+    <table class="table-styles">
+        <tr>
+            <th>Id</th>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Precio de compra</th>
+            <th>Precio de venta</th>
+            <th>Ganancia</th>
+            <th>Existencia</th>
+            <th>Opciones</th>
+        </tr>
+        <tr *ngFor="let producto of productos; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{producto.cod}}</td>
+            <td>{{producto.description}}</td>
+            <td>{{producto.price_purchase}}.00</td>
+            <td>{{producto.price_sale}}.00</td>
+            <td>{{producto.price_sale - producto.price_purchase}}.00</td>
+            <td>{{producto.stock}} unid.</td>
+            <td><mat-icon class="button-view" (click)="visualizarProducto(i+1)">visibility</mat-icon></td>
+        </tr>
+    </table>
+</section>

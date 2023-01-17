@@ -1,0 +1,29 @@
+section{
+    height: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/blurred-background-grocery-store_23-2148216105.jpg?w=2000");
+    background-size: cover;
+    background-position: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(192, 192, 192, 0.568);
+}
+
+article{
+    background-color: #414253a9;
+    padding: 2rem;
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+
+article h4{
+    letter-spacing: .35rem;
+}

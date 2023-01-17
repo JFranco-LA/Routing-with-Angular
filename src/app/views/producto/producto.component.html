@@ -1,0 +1,34 @@
+<section class="producto-container" *ngIf="isLoading && !datos">
+    <div class="title">
+        <h2>Producto NRO: {{id}}</h2>
+        <span routerLink="/products"><mat-icon>keyboard_return</mat-icon> <span> volver </span></span>
+    </div>
+    <div class="datos-container">
+        <form>
+            <div>
+                <label>Codigo de barras:</label>
+                <input type="text" [value]="productos[id-1].cod" disabled>
+            </div>
+            <div>
+                <label>Descripción:</label>
+                <input type="text" [value]="productos[id-1].description" disabled>
+            </div>
+            <div>
+                <label>Precio de venta:</label>
+                <input type="text" [value]="productos[id-1].price_purchase" disabled>
+            </div>
+            <div>
+                <label>Precio de compra:</label>
+                <input type="text" [value]="productos[id-1].price_sale" disabled>
+            </div>
+            <div>
+                <label>Existencia:</label>
+                <input type="text" [value]="productos[id-1].stock" disabled>
+            </div>
+        </form>
+        <figure class="imagen-container">
+            <img [src]="productos[id-1].image" [alt]="productos[id-1].description">
+        </figure>
+    </div>
+</section>
+<div class="div-spinner"><app-spinner *ngIf="!isLoading"></app-spinner></div>

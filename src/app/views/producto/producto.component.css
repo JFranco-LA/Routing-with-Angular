@@ -1,0 +1,95 @@
+.title{
+    width: 30rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.title h2{
+    position: absolute;
+    left: 10rem;
+}
+
+.title span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #cdcdcdd1;
+    padding: .2rem;
+    border-radius: .15rem;
+
+    transition: all .4s;
+}
+
+.title span:hover, .title span span:hover{
+    cursor: pointer;
+    background-color: #286cea;
+    color: white;
+}
+
+.title span span{
+    top: 20px;
+}
+
+.producto-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+.datos-container{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    background-color: #c7d8fa;
+    padding: 1.5rem;
+    border-radius:  .75rem;
+}
+
+.datos-container form, .datos-container form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-container form{
+    width: 300px;
+    gap: 1.5rem;
+}
+
+.datos-container form div input{
+    padding: .35rem .25rem;
+    border: none;
+    border-bottom: 1px solid #172a52;
+    background-color: transparent;
+}
+
+.imagen-container{
+    height: 200px;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: #acbfe4;
+    border: 1px solid #acbfe4;;
+    transition: all .6s;
+}
+
+.imagen-container:hover{
+    border-color: #0d3f9c;
+}
+
+.imagen-container img:hover{
+    transform: scale(120%);
+}
+
+.imagen-container img{
+    height: 100%;
+    transition: all .6s;
+}
+
+.div-spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
